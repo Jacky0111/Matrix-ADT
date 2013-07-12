@@ -1,0 +1,28 @@
+Raj Maitra
+
+1. List.java:
+    This file is the ADT specified for assignment 1. It contains the Node class with three constructors: (next, previous and data), and all of the specified constructors for the List class. Contains all of the access functions and manipulation procedures.
+The List class is called upon by:
+
+    e.g. List P = new List();
+
+2. ListTest.java
+    This file contains a function, main, that defines and tests the access functions and manipulation procedures of the List data type. The conditions isEmpty(), and offEnd() are commented out so as not to trigger a runtime error. makeEmpty is not tested because it is used in the Sparse.java file, therefore showing its ability to work. This is the same as equals(). ListTest is called by:
+
+    e.g. ListTest
+
+3. Matrix.java
+    This file is an ADT that calls upon List.java to create a Matrix. Matrix has an inner construct called "row" that is an array of Lists. Matrix has an inner class called Entry that has two constructs, col (column) and value (type double).
+    Matrix dose several functions such as add, subtract, multiply square matrices of the same size, multiply by a scalar. 
+
+4. MatrixTest.java
+    MatrixTest is a file that contains a main function and call all of the functions in the Matrix ADT, outputting their response to the command line.
+
+5. Sparse.java
+    Sparse is a function that reads in an input file, builds the two matrices from that file and does all of the specified functions to those matrices. Their responses are outputted to a file. The function is called like,
+
+       e.g. Sparse in.dat out.dat
+   
+6. Makefile
+    Compiles and allows user to call the Sparse and ListTest functions as stipulated above.
+
